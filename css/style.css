@@ -1,0 +1,93 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  html{
+    font-size: 62.5%;
+    background-color: hsl(218, 23%, 16%);
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+/* setting up the summary container */
+.advice-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+   width: 600px;
+   height: 370px;
+   background-color: hsl(217, 19%, 24%)
+   
+    
+   
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 0 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    color: hsl(150, 100%, 66%);
+}
+.text-container{
+    font-size: 2.8em;
+    text-align: center;
+    font-family: 'manrope';
+    color: white;
+}
+
+.dice{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+    
+}
+.dice-inner{
+    margin: auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    position: absolute;
+    top: 10px;
+    bottom: 100px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
